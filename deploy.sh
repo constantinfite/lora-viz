@@ -1,3 +1,5 @@
+#heroku config:set NPM_CONFIG_PRODUCTION=false YARN_PRODUCTION=false
+
 cd C:\\Users\\const\\Documents\\Web-programming\\visualisation-app-lora\\client
 npm run build
 cd ..
