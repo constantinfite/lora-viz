@@ -1,4 +1,7 @@
-#heroku config:set NPM_CONFIG_PRODUCTION=false YARN_PRODUCTION=false
+# not install dev dependency
+#heroku config:set NPM_CONFIG_PRODUCTION=true
+
+#ADD env variable in heroku
 
 cd C:\\Users\\const\\Documents\\Web-programming\\visualisation-app-lora\\client
 npm run build
