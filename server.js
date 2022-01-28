@@ -5,8 +5,8 @@ const cors = require("cors");
 require('dotenv').config()
 const mongoose = require("mongoose")
 const { mongoUri } = require('./config')
-//const SensorDataRoutes = require('./routes/api/temp_hum_route')
-const SensorDataRoutes = require('./routes/api/gps_route')
+const SensorRootTemp = require('./routes/api/temp_hum_root')
+const SensorRootGPS = require('./routes/api/gps_root')
 
 const path = require("path")
 
@@ -28,7 +28,8 @@ mongoose.connect(mongoUri, {
     .then(() => console.log("MongoDB database connected"))
     .catch((err) => console.log(err))
 
-app.use('/api/SensorDataList', SensorDataRoutes)
+app.use('/api/SensorDataList', SensorRootTemp)
+app.use('/api/SensorDataList', SensorRootGPS)
 
 
 
