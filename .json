@@ -1,0 +1,57 @@
+{
+    "session_key_id": "AX6hz2l7R9awp61Y2VtZmg==",
+    "f_port": 1,
+    "f_cnt": 6,
+    "frm_payload": "TrUGN8AA",
+    "decoded_payload": {
+      "altitude": 0,
+      "latitude": 43.963,
+      "longitude": 4.9207
+    },
+    "rx_metadata": [
+      {
+        "gateway_ids": {
+          "gateway_id": "first-gateway-fite",
+          "eui": "B827EBFFFEFA85BE"
+        },
+        "time": "2022-01-28T17:54:21.884553Z",
+        "timestamp": 782018356,
+        "rssi": -25,
+        "channel_rssi": -25,
+        "snr": 7.2,
+        "location": {
+          "latitude": 43.963117859711815,
+          "longitude": 4.920774872292908,
+          "source": "SOURCE_REGISTRY"
+        },
+        "uplink_token": "CiAKHgoSZmlyc3QtZ2F0ZXdheS1maXRlEgi4J+v//vqFvhC0zvL0AhoMCM3b0I8GEIqntMgDIKDGtJ/hFioMCM3b0I8GEKjq5KUD",
+        "channel_index": 5
+      }
+    ],
+    "settings": {
+      "data_rate": {
+        "lora": {
+          "bandwidth": 125000,
+          "spreading_factor": 7
+        }
+      },
+      "coding_rate": "4/5",
+      "frequency": "867500000",
+      "timestamp": 782018356,
+      "time": "2022-01-28T17:54:21.884553Z"
+    },
+    "received_at": "2022-01-28T17:54:21.958606773Z",
+    "consumed_airtime": "0.051456s",
+    "locations": {
+      "frm-payload": {
+        "latitude": 43.963,
+        "longitude": 4.9207,
+        "source": "SOURCE_GPS"
+      }
+    },
+    "network_ids": {
+      "net_id": "000013",
+      "tenant_id": "ttn",
+      "cluster_id": "ttn-eu1"
+    }
+}

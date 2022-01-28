@@ -5,7 +5,9 @@ const cors = require("cors");
 require('dotenv').config()
 const mongoose = require("mongoose")
 const { mongoUri } = require('./config')
-const SensorDataRoutes = require('./routes/api/temp_hum_route')
+//const SensorDataRoutes = require('./routes/api/temp_hum_route')
+const SensorDataRoutes = require('./routes/api/gps')
+
 const path = require("path")
 
 app.use(bodyParser.json());
@@ -27,6 +29,8 @@ mongoose.connect(mongoUri, {
     .catch((err) => console.log(err))
 
 app.use('/api/SensorDataList', SensorDataRoutes)
+
+
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/dist'))
