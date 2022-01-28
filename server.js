@@ -5,7 +5,7 @@ const cors = require("cors");
 require('dotenv').config()
 const mongoose = require("mongoose")
 const { mongoUri } = require('./config')
-const SensorDataRoutes = require('./routes/api/SensorDataListItems')
+const SensorDataRoutes = require('./routes/api/temp_hum_route')
 const path = require("path")
 
 app.use(bodyParser.json());

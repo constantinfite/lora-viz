@@ -272,7 +272,7 @@ export default {
   async created() {
     this.loaded = false;
     try {
-      const response = await axios.get("api/SensorDataList");
+      const response = await axios.get("api/SensorDataList/temp_hum");
       this.items = response.data;
       this.loaded = true;
     } catch (e) {
