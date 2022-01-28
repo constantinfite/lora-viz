@@ -6,7 +6,7 @@ require('dotenv').config()
 const mongoose = require("mongoose")
 const { mongoUri } = require('./config')
 //const SensorDataRoutes = require('./routes/api/temp_hum_route')
-const SensorDataRoutes = require('./routes/api/gps')
+const SensorDataRoutes = require('./routes/api/gps_route')
 
 const path = require("path")
 
